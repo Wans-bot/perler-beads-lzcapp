@@ -1,0 +1,85 @@
+package: cloud.lazycat.app.perler-beads
+version: 0.1.0-4
+name: 拼豆底稿生成器
+description: 把任意图片一键转成拼豆底稿：智能像素化、品牌色号适配、杂色清理与手动精修，可导出带色号的图纸；图片只在你自己的浏览器中处理。
+author: Zippland
+license: AGPL-3.0
+homepage: https://github.com/Zippland/perler-beads
+min_os_version: 1.5.0
+locales:
+  zh-CN:
+    name: 拼豆底稿生成器
+    description: 把任意图片一键转成拼豆底稿：智能像素化、品牌色号适配、杂色清理与手动精修，可导出带色号的图纸；图片只在你自己的浏览器中处理。
+    usage: |
+      拼豆底稿生成器（Perler Beads Generator）把任意图片转换成可直接照着拼的拼豆底稿：
+      自动完成像素化、色号映射、杂色合并与背景移除，并支持手动精修，最后导出带色号的
+      PNG 图纸。所有图像处理都在你的浏览器本地完成，不上传任何素材，也不需要注册账号。
+
+      首次使用：
+      1. 打开应用即为中文界面，无需登录。
+      2. 点「上传图片 / 导入底稿」选择一张图片：会弹出统一文件窗口，可选用懒猫网盘中的
+         图片，也可选本地文件（支持 JPG / PNG / GIF，以及 CSV 格式的底稿）。
+      3. 也可以直接在懒猫网盘里对着图片或 CSV 底稿点右键，选择用本应用打开，
+         应用会自动载入该文件。
+      4. 调整精细度、色板（内置 MARD / COCO / 漫漫 / 盼盼 / 咪小窝 等品牌色号体系与
+         多种色板规格）与背景处理方式，生成底稿。
+
+      核心操作：
+      - 手动精修：用画笔、填充等工具逐格修改颜色，随时撤销、重做。
+      - 颜色调整：合并杂色、排除不想用的颜色并自动重映射到最近似色号。
+      - 导出图纸：点「下载」导出 PNG 图纸（可选带色号标注与网格线），也可选择导出 CSV
+         颜色清单；会弹出统一文件窗口，可选择保存到懒猫网盘或本地。
+
+      数据说明：
+      - 图片与底稿只在当前浏览器中处理，应用不在微服上保存任何素材；刷新页面后未手动
+        保存的编辑会丢失。
+      - 应用设置（如当前色板、界面偏好）保存在当前浏览器的本地存储中。
+      - 重启与升级不影响应用，升级不改变访问地址。
+
+      许可说明：
+      - 本应用按上游 AGPL-3.0 许可分发，随包附完整许可证文本；对应源码：
+        https://github.com/Zippland/perler-beads
+      - 上游产品页：https://perlerbeads.zippland.com
+  en-US:
+    name: Perler Beads Generator
+    description: "Turn any image into a perler-bead pattern: smart pixelation, brand colour-code mapping, stray-colour cleanup and manual retouching, with pattern export; images are processed in your browser only."
+    usage: |
+      Perler Beads Generator turns any image into a fuse-bead pattern you can
+      follow bead by bead: it pixelates the image, maps pixels to bead colour
+      codes, merges stray colours and removes the background, supports manual
+      retouching, and exports a PNG pattern with colour codes. All image
+      processing happens locally in your browser; nothing is uploaded and no
+      account is required.
+
+      Getting started:
+      1. The app opens in Chinese; no login needed.
+      2. Click "上传图片 / 导入底稿" (upload image / import pattern) to pick an
+         image: a unified file dialog lets you choose from the LazyCat cloud
+         drive or local files (JPG / PNG / GIF, plus CSV pattern files).
+      3. You can also right-click an image or a CSV pattern in the LazyCat cloud
+         drive and choose to open it with this app; the file loads automatically.
+      4. Adjust the granularity, palette (built-in MARD / COCO / 漫漫 / 盼盼 /
+         咪小窝 colour-code systems and several palette sizes) and background
+         handling, then generate the pattern.
+
+      Core features:
+      - Manual retouching: brush and fill tools edit pixel by pixel, with
+        undo/redo.
+      - Colour tools: merge stray colours, exclude unwanted colours and
+        re-map them to the nearest available code.
+      - Export: click "下载" (download) to export the PNG pattern (optionally
+        with colour codes and grid lines) or a CSV colour list; a unified file
+        dialog lets you save to the LazyCat cloud drive or locally.
+
+      Data notes:
+      - Images and patterns are processed in the current browser only; nothing
+        is stored on the microserver. Un-saved edits are lost on refresh.
+      - App settings (current palette, UI preferences) live in this browser's
+        local storage.
+      - Restarts and upgrades do not affect the app, and its URL stays
+        unchanged.
+
+      License:
+      - Distributed under the upstream AGPL-3.0 license (full text bundled);
+        source: https://github.com/Zippland/perler-beads
+      - Upstream product page: https://perlerbeads.zippland.com
